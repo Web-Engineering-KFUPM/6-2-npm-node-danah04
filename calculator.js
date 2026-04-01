@@ -213,7 +213,7 @@ After completing all TODOs, test your calculator:
 
 */
 
-import { add, subtract } from "./utils/operations.js";
+import { add, subtract, multiply, divide } from "./utils/operations.js";
 import { parseNumbers, isValidOperation } from "./utils/parser.js";
 import _ from "lodash";
 
@@ -234,6 +234,12 @@ switch (operation) {
     break;
   case "subtract":
     result = subtract(nums);
+    break;
+  case "multiply":
+    result = multiply(nums);
+    break;
+  case "divide":
+    result = divide(nums);
     break;
   default:
     console.log("Operation not implemented yet.");
